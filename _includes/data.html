@@ -1,0 +1,53 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+    th{ 
+        color:#fff;
+            }
+</style>
+
+
+<table class="table table-striped">
+    <tr  class="bg-info">
+        <th>Фамилия</th>
+        <th>Имя</th>
+        <th>Отчество</th>
+		<th>Оценка</th>
+    </tr>
+
+    <tbody id="myTable">
+        
+    </tbody>
+</table>
+
+<script>
+	var myArray = [
+		{"Фамилия":"Грачева","Имя":"Елизавета","Отчество":"Эминовна","Оценка":3},
+		{"Фамилия":"Прохоров","Имя":"Арсений","Отчество":"Юрьевич","Оценка":4},
+		{"Фамилия":"Денисова","Имя":"Алиса","Отчество":"Константиновна","Оценка":3},
+		{"Фамилия":"Семенов","Имя":"Максим","Отчество":"Макарович","Оценка":4},
+		{"Фамилия":"Петров","Имя":"Василий","Отчество":"Андреевич","Оценка":3},
+		{"Фамилия":"Крюкова","Имя":"Василина","Отчество":"Тимофеевна","Оценка":5},
+]
+	
+	buildTable(myArray)
+
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+
+		for (var i = 0; i < data.length; i++){
+			var row = `<tr>
+							<td>${data[i].Фамилия}</td>
+							<td>${data[i].Имя}</td>
+							<td>${data[i].Отчество}</td>
+							<td>${data[i].Оценка}</td>
+					  </tr>`
+			table.innerHTML += row
+
+
+		}
+	}
+
+</script>

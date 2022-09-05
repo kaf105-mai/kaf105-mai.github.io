@@ -1,0 +1,9 @@
+- label: Курс 1
+  items:
+    - name: Лаба 1
+      link: /docs/lab/laba1/
+
+- label: Курс 2
+  items:
+    - name: Лаба 2
+      link: /docs/lab/laba2/

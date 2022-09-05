@@ -1,0 +1,39 @@
+# Site Settings
+lang: ru
+title: Кафедра 105
+baseurl: ""
+url: "https://www.kaf105-mai.github.io"
+permalink: pretty
+theme: bulma-clean-theme
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - kramdown-parser-gfm
+  - jekyll-redirect-from
+
+exclude: 
+  - README.md
+
+livereload: true
+
+sass:
+  style: compressed
+  source_dir: _sass
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: false
+
+footer_menu: example_footer_menu
