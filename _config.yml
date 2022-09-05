@@ -4,7 +4,8 @@ title: Кафедра 105
 baseurl: ""
 url: "https://www.kaf105-mai.github.io"
 permalink: pretty
-theme: bulma-clean-theme
+# theme: bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme
 highlighter: rouge
 markdown: kramdown
 kramdown:
